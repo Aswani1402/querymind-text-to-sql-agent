@@ -1,0 +1,21 @@
+question,expected_keywords,difficulty,notes
+Show the top 5 customers by total invoice amount.,customer|invoice|sum,easy,Core Chinook revenue question
+Which genre generated the highest revenue?,genre|track|invoiceline|sum,medium,Requires joins across revenue tables
+Show customers who have spent more than 40 dollars.,customer|invoice|sum|having,easy,Uses HAVING
+Find the number of invoices by year.,invoice|strftime|count,easy,Date grouping
+Which employees support the most customers?,employee|customer|count,easy,Support rep grouping
+Show total sales by billing country.,invoice|billingcountry|sum,easy,Country aggregation
+What are the top 10 most expensive tracks?,track|unitprice,easy,Simple ordering
+Which countries have the highest number of customers?,customer|country|count,easy,Customer grouping
+Which artist has the most tracks?,artist|album|track|count,medium,Artist to track join
+List albums for the artist AC/DC.,album|artist,easy,Simple artist filter
+How many tracks are in each genre?,genre|track|count,easy,Genre aggregation
+What is the average invoice total by country?,invoice|billingcountry|avg,medium,Average by country
+Which customers are from Brazil?,customer|country,easy,Filtering
+Show the total number of tracks by media type.,mediatype|track|count,easy,Media type grouping
+Which albums have the most tracks?,album|track|count,medium,Album aggregation
+Show monthly invoice totals.,invoice|strftime|sum,medium,Date aggregation by month
+Find the top 5 invoices by total amount.,invoice|total,easy,Simple ordering
+Which playlists contain the most tracks?,playlist|playlisttrack|count,medium,Playlist join
+Show total revenue by employee support representative.,employee|customer|invoice|sum,hard,Multi-table aggregation
+Find tracks longer than 5 minutes.,track|milliseconds,easy,Numeric filter
